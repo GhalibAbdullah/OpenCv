@@ -5,7 +5,7 @@ img1 = cv2.imread('../assets/blend1.jpg')  # e.g., landscape
 img2 = cv2.imread('../assets/blend2.jpg')  # e.g., cityscape
 
 if img1 is None or img2 is None:
-    print("❌ One or both images could not be loaded.")
+    print("One or both images could not be loaded.")
     exit()
 
 # Resize both images to the same dimensions if needed
