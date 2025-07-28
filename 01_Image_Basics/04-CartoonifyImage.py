@@ -6,7 +6,7 @@ image_path = '../assets/example.png'
 img = cv2.imread(image_path)
 
 if img is None:
-    print(f"❌ Failed to load image: {image_path}")
+    print(f"Failed to load image: {image_path}")
     exit()
 
 # ---------- Step 2: Convert to grayscale and apply median blur ----------
