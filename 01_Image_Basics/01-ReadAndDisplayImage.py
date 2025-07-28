@@ -1,7 +1,7 @@
 import cv2
 
 # ---------- Step 1: Load the image ----------
-image_path = r'../assets/example.png'  # Make sure this file exists in the directory
+image_path = r'../assets/example.png'  
 image = cv2.imread(image_path)
 
 # ---------- Step 2: Validate image loading ----------
