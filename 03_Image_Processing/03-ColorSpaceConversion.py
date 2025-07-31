@@ -1,11 +1,11 @@
 import cv2
 
 # ---------- Step 1: Load the image ----------
-image_path = 'example.jpg'
+image_path = '../assets/example.png'
 img = cv2.imread(image_path)
 
 if img is None:
-    print(f"❌ Could not load image: {image_path}")
+    print(f"Could not load image: {image_path}")
     exit()
 
 # ---------- Step 2: Convert to different color spaces ----------
