@@ -1,11 +1,11 @@
 import cv2
 
 # ---------- Step 1: Load the image ----------
-image_path = 'example.jpg'
+image_path = '../assets/example.jpg'
 img = cv2.imread(image_path)
 
 if img is None:
-    print(f"❌ Image not found: {image_path}")
+    print(f"Image not found: {image_path}")
     exit()
 
 # ---------- Step 2: Apply various blurring techniques ----------
