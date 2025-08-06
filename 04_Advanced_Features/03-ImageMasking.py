@@ -2,11 +2,11 @@ import cv2
 import numpy as np
 
 # ---------- Step 1: Load the image ----------
-image_path = 'example.jpg'
+image_path = '../assets/example.png'
 img = cv2.imread(image_path)
 
 if img is None:
-    print(f"❌ Image not found: {image_path}")
+    print(f"Image not found: {image_path}")
     exit()
 
 # ---------- Step 2: Create a black mask ----------
