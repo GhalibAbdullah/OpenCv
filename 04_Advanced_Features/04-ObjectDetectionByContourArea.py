@@ -1,11 +1,11 @@
 import cv2
 
 # ---------- Step 1: Load image ----------
-image_path = 'objects.jpg'  # Use an image with multiple distinct shapes
+image_path = '../assets/objects.png'  # Use an image with multiple distinct shapes
 img = cv2.imread(image_path)
 
 if img is None:
-    print(f"❌ Failed to load image: {image_path}")
+    print(f"Failed to load image: {image_path}")
     exit()
 
 # ---------- Step 2: Convert to grayscale and threshold ----------
@@ -23,7 +23,7 @@ for contour in contours:
     area = cv2.contourArea(contour)
     if area > min_area:
         cv2.drawContours(output, [contour], -1, (0, 255, 0), 2)
-        print(f"🧱 Object with area: {int(area)}")
+        print(f"Object with area: {int(area)}")
 
 # ---------- Step 5: Show results ----------
 cv2.imshow("Original", img)
